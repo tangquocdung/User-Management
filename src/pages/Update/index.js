@@ -18,7 +18,7 @@ const Update = () => {
     values.preventDefault();
     axios.put(`http://localhost:3001/users/${id}`, dataSingle).then((res) => {
       alert("Update successful!");
-      navigate("/dashboard");
+      navigate("/viewuser");
     });
   }
   console.log(dataSingle);

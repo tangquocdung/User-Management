@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Table, Typography } from "antd";
 import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
 import axios from "axios";
-import "./dashboard.css";
-
+import "./viewuser.css";
 
 const Dashboard = () => {
-  const [isUpdating, setIsUpdating] = useState(false);
-  const [updatingUser, setUpdatingUser] = useState(null);
   const [data, setData] = useState([]);
 
   const navigate = useNavigate();
