@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Table, Button, Modal, Input } from "antd";
 import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
 import axios from "axios";
-import "./viewuser.css";
+import "./create.css";
 
 const CreateUser = () => {
   const [isUpdating, setIsUpdating] = useState(false);
